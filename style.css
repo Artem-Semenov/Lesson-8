@@ -102,9 +102,7 @@ padding: 10px;
     width: 25%;
   }
   .main-center {
+    float: left;
     width: 50%;
-margin-left: auto;
-margin-right: auto;
-
   }
 }
