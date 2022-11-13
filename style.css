@@ -33,7 +33,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 
-header > div {
+/* header > a {
+  display: block;
   padding-top: 20px;
   width: fit-content;
   margin-left: auto;
@@ -103,6 +104,41 @@ padding: 10px;
   }
   .main-center {
     float: left;
+    width: 50%;
+  }
+} */
+
+
+header {
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+[class*= "col-"] {
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-12 {
+  width: 100%;
+}
+footer {
+  background: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-6 {
     width: 50%;
   }
 }
